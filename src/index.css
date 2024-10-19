@@ -3,7 +3,8 @@ body {
   box-sizing: border-box;
   font-size: 14px;
   font-family: 'Spartan', 'Montserrat', 'Futura', sans-serif;
-  background-color:  white;
+  background-color:  hsl(107, 19%, 98%);
+  color: #2C3B28;
   overflow-x: hidden;
 }
 
