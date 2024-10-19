@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./components/Home/Home"
 
 
 function App() {
@@ -13,6 +14,6 @@ function App() {
       </div>
     </Router>
   );
-}
+} 
 
 export default App;
