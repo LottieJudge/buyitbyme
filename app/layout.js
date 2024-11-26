@@ -2,25 +2,22 @@
 
 export default function Layout({ children }) {
   return (
-    <html lang="en"> {/* Define the root html tag and its language */}
+    <html lang="en">
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>My App</title>
       </head>
       
-      <body> {/* The body tag for your page */}
+      <body> 
         <header>
-          <h1>My App</h1>
-          {/* You can add links or other elements for navigation */}
+          <h1>Buy It By Me</h1>
         </header>
-
         <main>
-          {children} {/* This renders the content of your page, e.g., helloWorld */}
+          {children}
         </main>
-
         <footer>
-          <p>© 2024 My App</p>
+          <p>a Judge Godfrey production</p>
         </footer>
       </body>
     </html>
