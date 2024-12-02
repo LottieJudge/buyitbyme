@@ -13,6 +13,7 @@ export default function Layout({ children }) {
         </header>
         <main>
           {children}
+          {/* chidlren - the content etc  */}
         </main>
         <footer>
           <p>a Judge Godfrey production</p>
