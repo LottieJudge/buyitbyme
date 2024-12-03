@@ -5,7 +5,7 @@ export default function Layout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>My App</title>
+        <title>Buy it By me</title>
       </head>
       <body> 
         <header>
@@ -17,6 +17,9 @@ export default function Layout({ children }) {
         </main>
         <footer>
           <p>a Judge Godfrey production</p>
+          <a href="https://www.theguardian.com/technology/2024/sep/26/amazon-uk-pays-corporation-tax-for-first-time-since-2020">
+            <p>The need?</p>
+          </a>
         </footer>
       </body>
     </html>
