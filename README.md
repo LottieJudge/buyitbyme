@@ -7,4 +7,7 @@ a Full Stack app for buying the things you need locally. Support your community,
 - Public - Photos, fonts, images etc any static content 
 - App - Routing and layouts e.g homepage/shop page etc 
 - Components - reusable components, eg a button, a search bar, footer etc 
-- 
+
+
+API work
+Figma design 
