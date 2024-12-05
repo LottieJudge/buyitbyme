@@ -1,9 +1,14 @@
+import React from "react";
 
-export default function helloWorld() {
+const fetchCurrentTime = () => {
+  return new Date().toLocaleString();
+}
+
+export default function theTime() {
+  let currentTime = fetchCurrentTime();
   return (
     <div>
-      <h1>Hello</h1>
-      <p>a query??</p>
+     <p>It's hammer time! but also: {currentTime}</p>
     </div>
   );
 }
