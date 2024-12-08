@@ -11,4 +11,4 @@ export default function theTime() {
      <p>It's hammer time! but also: {currentTime}</p>
     </div>
   );
-}
+};
