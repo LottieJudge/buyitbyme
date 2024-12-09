@@ -20,7 +20,7 @@ export default function Page() {
       <h1>Shops</h1>
       <ul>
         {shops.map(shop => (
-          <li key={shop.id}>{shop.name}</li>
+          <li key={shop.shop_id}>{shop.name}</li>
         ))}
       </ul>
     </div>

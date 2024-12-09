@@ -1,11 +1,11 @@
-import pool from "../../lib/db";
+import pool from 'lib/db.js';
 
-export async function GET(req, res) {
+export default async function handler(req, res) {
   try {
-    const [rows] = await pool.query('SELECT * FROM shops');
-    return new Response(JSON.stringify(rows), { status: 200 });
+    const [rows] = await pool.query('SELECT * FROM buyitbyme.shops');
+    res.status(200).json(rows);
   } catch (error) {
     console.error(error);
-    return new Response(JSON.stringify({ error: 'Database query failed' }), { status: 500 });
+    res.status(500).json({ error: 'Database query failed' });
   }
 }
