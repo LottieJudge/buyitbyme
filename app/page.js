@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const fetchCurrentTime = () => {
   return new Date().toLocaleString();
 }
