@@ -10,7 +10,7 @@ export async function GET() {
     console.log("shops fetched:", shops);
 
     if (shops.length === 0 ){
-      return NextResponse.json({ error: "No Shops Fam"})
+      return NextResponse.json({ error: "No Shops Found"})
     }
 
     return NextResponse.json(shops)
