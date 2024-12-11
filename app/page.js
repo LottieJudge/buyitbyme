@@ -1,28 +1,32 @@
-'use client'
+"use client"
+import { useEffect } from "react";
 
-import { useEffect, useState } from "react";
-
-export default function Page() {
-  const [shops, setShops] = useState([]);
-
+export default function MyComponent() {
   useEffect(() => {
-    async function fetchShops() {
-      const response = await fetch('/api/testing-database/shops');
-      const data = await response.json();
-      setShops(data);
-    }
+    const fetchData = async () => {
+      try {
+        const data = await fetch('/api/shops', {
+          method: 'GET',
+        });
+        if (!data.ok) {
+          throw new Error(`HTTP error! Status: ${data.status}`);
+        }
+        const response = await data.json();
+        console.log(response);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
 
-    fetchShops();
+    fetchData();
   }, []);
 
   return (
     <div>
-      <h1>Shops</h1>
-      <ul>
-        {shops.map(shop => (
-          <li key={shop.shop_id}>{shop.name}</li>
-        ))}
-      </ul>
+      BuyItByMeBitch
     </div>
   );
 }
+
+
+

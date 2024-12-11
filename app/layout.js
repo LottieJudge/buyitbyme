@@ -1,4 +1,4 @@
-// Layout.js
+
 export default function Layout({ children }) {
   return (
     <html lang="en">
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
         <footer>
           <p>a Judge Godfrey production</p>
           <a href="https://www.theguardian.com/technology/2024/sep/26/amazon-uk-pays-corporation-tax-for-first-time-since-2020">
-            <p>The need?</p>
+            The need?
           </a>
         </footer>
       </body>
