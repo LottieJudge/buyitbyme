@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 
 export default function Layout({ children }) {
   return (
@@ -14,9 +16,9 @@ export default function Layout({ children }) {
         <main>{children}</main>
         <footer>
           <p>a Judge Godfrey production</p>
-          <a href="https://www.theguardian.com/technology/2024/sep/26/amazon-uk-pays-corporation-tax-for-first-time-since-2020">
+          <Link href="https://www.theguardian.com/technology/2024/sep/26/amazon-uk-pays-corporation-tax-for-first-time-since-2020">
             The need?
-          </a>
+          </Link>
         </footer>
       </body>
     </html>
