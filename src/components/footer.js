@@ -6,5 +6,9 @@ import { useRouter } from "next/navigation";
 export default function Footer(){
   const router = useRouter();
 
-  return 
+  return (
+    <footer>
+      
+    </footer>
+  )
 }
