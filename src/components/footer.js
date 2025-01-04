@@ -8,7 +8,8 @@ export default function Footer(){
 
   return (
     <footer>
-      
+      <button>Back</button>
+      <button>Home</button>
     </footer>
   )
 }
