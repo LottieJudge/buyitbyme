@@ -93,7 +93,7 @@ const navigation = {
   ],
 }
 
-export default function navigation() {
+export default function Navigation() {
   const [open, setOpen] = useState(false)
 
   return (
