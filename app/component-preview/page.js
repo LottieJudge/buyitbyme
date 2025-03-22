@@ -2,7 +2,8 @@
 
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
-import Searchbar from '@/components/Searchbar'; 
+import Feature from '@/components/Feature';
+import Footer from '@/components/Footer';
 
 
 export default function ComponentPreviewPage() {
@@ -11,7 +12,8 @@ export default function ComponentPreviewPage() {
       <h1 className="text-2xl font-bold mb-6"></h1>
       <Navigation />
       <Hero />
-      <Searchbar />
+      <Feature />
+      <Footer />
     </main>
   );
 }
