@@ -32,41 +32,41 @@ export default function hero() {
         </div>
         <div className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-            <h2 className="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+          <div className="relative isolate overflow-hidden bg-[#9bbad3] px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+            <h2 className="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-[#F5EFEB] sm:text-5xl">
               Buy it by me
             </h2>
-            <p className="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">
+            <p className="mx-auto mt-6 max-w-lg text-center text-lg text-[#F5EFEB]">
             Support local buisnesses - Find everyday items near you, no delivery needed
             </p>
-            <form className="mx-auto mt-10 flex max-w- gap-x-4">
+            <form className="mx-auto mt-10 flex max-w-md gap-x-4">
               <label htmlFor="search product" className="sr-only">
                 search product
               </label>
               <input
                 id="email-address"
-                name="email"
-                type="email"
+                id="product-search"
+                name="search"
+                type="search"
                 required
                 placeholder="search for items near you"
-                autoComplete="email"
-                className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
+                className="min-w-0 w-2/3 rounded-md bg-white/5 px-3.5 py-2 text-base text-[] outline-1 -outline-offset-1 outline-white/10 placeholder:text-[#F5EFEB] focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
               />
               <label htmlFor="post-code" className="sr-only">
-                Email address
+                Post code
               </label>
               <input
-                id="email-address"
-                name="email"
-                type="email"
+                id="post-code"
+                name="postcode"
+                type="text"
                 required
-                placeholder="Location e.g. SW1A 1AA"
-                autoComplete="post-code"
-                className="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
+                placeholder="e.g. SW1A 1AA"
+                autoComplete="postal-code"
+                className="min-w-0 w-1/3 rounded-md bg-white/5 px-3.5 py-2 text-base text-[#F5EFEB] outline-1 -outline-offset-1 outline-white/10 placeholder:text-[#F5EFEB] focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
               />
               <button
                 type="submit"
-                className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-gray-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                className="flex-none rounded-md bg-[#F5EFEB] px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-xs hover:bg-[#2F4156] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 <SearchIcon className="w-6 h-6"/>
               </button>

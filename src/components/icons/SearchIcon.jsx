@@ -1,6 +1,6 @@
 // components/icons/SearchIcon.jsx
 
-export default function SearchIcon({ className = "w-6 h-6", stroke = "#191265", fill = "white" }) {
+export default function SearchIcon({ className = "w-6 h-6", stroke = "#9bbad3", fill = "#F5EFEB" }) {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
