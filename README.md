@@ -3,7 +3,7 @@
   <img src="https://github.com/user-attachments/assets/fdfd9ece-99db-4598-bebd-601c4bbbd455" width="300" height="300" /> 
 </p>
 
-#Buy It By Me 🛒🏡
+# Buy It By Me 🛒🏡
 
 
 Buy It By Me is a full-stack web application designed to help users purchase items from local stores, promoting sustainability, community jobs, and economic growth. The app encourages users to find what they need locally, reducing carbon footprints and putting money back in communities.
