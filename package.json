@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.8",
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "autoprefixer": "^10.4.20",
     "axios": "^1.7.7",
     "cors": "^2.8.5",
