@@ -35,15 +35,15 @@ export default function Feature() {
                 Buy it by me is the fast responsible way to find and buy products. We support local businesses and help you find everyday items near you, no delivery needed.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-  {features.map(({ name, description, icon: Icon }) => (
-    <div key={name} className="relative pl-9">
-      <dt className="inline font-semibold text-gray-900">
-        <Icon aria-hidden="true" className="absolute top-1 left-1 w-16 h-16" />
-        {name}
-      </dt>{' '}
-      <dd className="inline">{description}</dd>
+              {features.map(({ name, description, icon: Icon }) => (
+  <div key={name} className="flex items-start gap-4">
+    <Icon className="w-12 h-12 shrink-0" />
+    <div>
+      <dt className="text-lg font-semibold text-gray-900">{name}</dt>
+      <dd className="mt-1 text-gray-600">{description}</dd>
     </div>
-  ))}
+  </div>
+))}
 </dl>
 
             </div>
