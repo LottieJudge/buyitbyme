@@ -5,12 +5,6 @@ import SearchIcon from './icons/SearchIcon'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 export default function hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -44,7 +38,6 @@ export default function hero() {
                 search product
               </label>
               <input
-                id="email-address"
                 id="product-search"
                 name="search"
                 type="search"
