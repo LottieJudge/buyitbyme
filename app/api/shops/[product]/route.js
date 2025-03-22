@@ -13,7 +13,7 @@ export async function GET(request, context){
 
     if (products.length === 0){
       return NextResponse.json({error:'No products found!'}, {status: 404})
-    } return NextResponse.json(product)
+    } return NextResponse.json(products)
   } catch (error) {
     console.error(error);
     return NextResponse.json({error: error.message}, { status:500 })
