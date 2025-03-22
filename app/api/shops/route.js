@@ -1,9 +1,9 @@
-import { shopConnection } from "../../../lib/db";
+import { dbConnection } from "../../lib/db";
 import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const db = await shopConnection()
+    const db = await dbConnection()
     const sql = "SELECT * FROM shops"
     const [shops] = await db.query(sql)
 
