@@ -1,13 +1,8 @@
-# Buy It By Me 
-a Full Stack app for buying the things you need locally. Support your community, support the economy and, most importantly, support the planet we call home. 
+# Buy It By Me 🛒🏡
+
+Buy It By Me is a full-stack web application designed to help users purchase items from local stores, promoting sustainability, community jobs, and economic growth. The app encourages users to find what they need locally, reducing carbon footprints and putting money back in communities.
 
 
-## file structure notes 
-
-- Public - Photos, fonts, images etc any static content 
-- App - Routing and layouts e.g homepage/shop page etc 
-- Components - reusable components, eg a button, a search bar, footer etc 
-
-
-API work
-Figma design 
+## Developers 
+[**Lottie Judge**](https://github.com/LottieJudge?tab=overview&from=2025-03-01&to=2025-03-22)
+[**Scott Godfrey**](https://github.com/Otskey?tab=overview&from=2025-03-01&to=2025-03-22)
