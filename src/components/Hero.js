@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from 'react'
 import SearchIcon from './icons/SearchIcon'
@@ -6,8 +6,17 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
-export default function hero() {
+export default function hero({ onSearch }) {
+  const [query, setQuery ] = useState("");
+  const [postcode, setPostcode] = useState("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+      if (onSearch){
+        onSearch(query, postcode)
+      }
+  }
 
   return (
     <div className="bg-white">
@@ -43,6 +52,8 @@ export default function hero() {
                 type="search"
                 required
                 placeholder="search for items near you"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
                 className="min-w-0 w-2/3 rounded-md bg-white/5 px-3.5 py-2 text-base text-[] outline-1 -outline-offset-1 outline-white/10 placeholder:text-[#F5EFEB] focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
               />
               <label htmlFor="post-code" className="sr-only">
@@ -55,6 +66,8 @@ export default function hero() {
                 required
                 placeholder="e.g. SW1A 1AA"
                 autoComplete="postal-code"
+                value={postcode}
+                onChange={(e) =>setPostcode(e.target.value)}
                 className="min-w-0 w-1/3 rounded-md bg-white/5 px-3.5 py-2 text-base text-[#F5EFEB] outline-1 -outline-offset-1 outline-white/10 placeholder:text-[#F5EFEB] focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6"
               />
               <button

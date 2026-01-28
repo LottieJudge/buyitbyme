@@ -1,19 +1,11 @@
 'use client'
 
 import { Fragment, useState } from 'react'
+import LogoIcon from './icons/LogoIcon'
 import {
   Dialog,
   DialogBackdrop,
   DialogPanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-  Tab,
-  TabGroup,
-  TabList,
-  TabPanel,
-  TabPanels,
 } from '@headlessui/react'
 import {
   Bars3Icon,
@@ -22,6 +14,7 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import AvatarIcon from './icons/AvatarIcon'
 
 
 const navigation = {
@@ -80,7 +73,7 @@ export default function Navigation() {
       <header className="relative">
         <nav aria-label="Top">
           {/* Top navigation */}
-          <div className="bg-gray-900">
+          <div className="bg-[#191265]">
             <div className="mx-auto flex h-10 max-w-7xl items-center justify-end px-4 sm:px-6 lg:px-8">
               <div className="flex items-center space-x-6">
                 <a href="#" className="text-sm font-medium text-white hover:text-gray-100">
@@ -97,16 +90,12 @@ export default function Navigation() {
           <div className="bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="border-b border-gray-200">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-32 items-center justify-between">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:flex-1 lg:items-center">
                     <a href="#">
                       <span className="sr-only">Buy It By Me</span>
-                      <img
-                        alt=""
-                        src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                        className="h-8 w-auto"
-                      />
+                      <LogoIcon className="h-32 w-auto" />
                     </a>
                   </div>
                   {/* Mobile menu and search (lg-) */}
@@ -142,15 +131,10 @@ export default function Navigation() {
                         Help
                       </a>
 
-                      {/* Cart */}
-                      <div className="ml-4 flow-root lg:ml-8">
+                      {/* Avatar */}
+                      <div className="ml-4 flow-root lg:ml-6">
                         <a href="#" className="group -m-2 flex items-center p-2">
-                          <ShoppingBagIcon
-                            aria-hidden="true"
-                            className="size-6 shrink-0 text-gray-400 group-hover:text-gray-500"
-                          />
-                          <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
-                          <span className="sr-only">items in cart, view bag</span>
+                          <AvatarIcon className="w-8 h-8"/>
                         </a>
                       </div>
                     </div>
